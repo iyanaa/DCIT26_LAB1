@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+    --purple-dark: #4a0080;
+    --purple-main: #7b2fbf;
+    --purple-light: #c084fc;
+    --purple-bg: #f5eeff;
+    --white: #ffffff;
+}
+
+/* NAV */
+header {
+    background-color: var(--purple-dark);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 16px 0;
+    gap: 40px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--purple-light);
+}
+
+/* HERO */
+#home {
+    background: linear-gradient(135deg, var(--purple-dark), var(--purple-main));
+    color: var(--white);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: var(--purple-light);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 28px;
+    opacity: 0.9;
+}
+
+.btn {
+    background-color: var(--white);
+    color: var(--purple-dark);
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--purple-light);
+    color: var(--white);
+}
+
+/* ABOUT */
+#about {
+    background-color: var(--purple-bg);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: var(--purple-dark);
+    margin-bottom: 30px;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333;
+    font-size: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 14px;
+}
+
+/* SKILLS */
+#skills {
+    background-color: var(--white);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    color: var(--purple-dark);
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: var(--purple-main);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+}
+
+.skill-card:hover {
+    background-color: var(--purple-dark);
+}
+
+/* CONTACT */
+#contact {
+    background-color: var(--purple-bg);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: var(--purple-dark);
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.contact-info a {
+    color: var(--purple-main);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--purple-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
